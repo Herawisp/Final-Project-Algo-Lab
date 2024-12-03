@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 #include "BooksHandler.c"
 #include "ImageHandler.c"
-
+#include "UserInfoHandler.c"
 void DisplayMainMenu() {
 	int input;
 	do {
@@ -17,7 +17,7 @@ void DisplayMainMenu() {
 	} while (input < 1 || input > 3);
 	
 	switch (input) {
-		case 2: DisplayUserMenu();
+		case 2: DisplayUserAccount();
 		default:;
 	}
 }
@@ -115,6 +115,15 @@ void DisplayAdminMenu() {
 void DisplayAddBook() {
 	
 }
+
+void SignupUser(){
+	
+}
+
+void SinginUser(){
+	
+}
+
 
 void main() {
 	ReadBookFile();
